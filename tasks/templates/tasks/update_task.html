@@ -1,0 +1,52 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<style>
+
+	body{
+		background-color: #8b8e91;
+	}
+
+    h3{
+        color:#fff;
+		width:200px;
+		margin: 10px auto;
+		padding:20px;
+		background-color: rgb(129, 179, 166);
+		border-radius: 20px;
+		box-shadow: 6px 2px 30px 0px rgba(0,0,0,0.75);
+    }
+
+	input{
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		box-sizing: border-box;
+		border-radius: 5px;
+	}
+
+
+	.center-column{
+		width:600px;
+		margin: 20px auto;
+		padding:20px;
+		background-color: rgb(186, 226, 253);
+		border-radius: 3px;
+		box-shadow: 6px 2px 30px 0px rgba(0,0,0,0.75);
+	}
+
+	.btn-info{
+		background-color: #5107ff;
+		border-color: #3c4263;
+	}
+
+</style>
+
+<div class="center-column">
+    <h3>Update Task</h3>
+
+    <form method="POST" action="">
+        {% csrf_token %}
+        {{form}}
+        <input class="btn btn-info" type="submit" value="Update" name="Update Task">
+    </form>
+</div>
